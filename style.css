@@ -1,0 +1,133 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 100px;
+    margin-top:0px; margin-bottom:0px;
+    margin-right:20px;
+}
+
+#gender {
+    height:100px; width:100px;
+    padding:0px; margin:0px;
+}
+
+#headshot {
+    display: flex;
+    padding: 0px;
+    margin-left: auto; margin-right: auto; 
+    margin-top: 75px; margin-bottom: 20px;
+    border-radius: 20px; border: solid 2px black;
+    image-rendering:smooth;
+    width:500px; height:auto; 
+}
+
+button {
+    display:block;
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 50px; 
+    background: none;
+    border: none;
+}
+
+button:hover {
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#rand {
+    height:100px; width:100px;
+}
+
+#icons {
+    display:flex;
+    margin-left:auto; margin-right: auto;
+    justify-content: space-evenly;
+    width:50%;
+}
+
+.icons {
+    height:100px; width:100px;
+}
+
+.icons:hover {
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+#info {
+    display:block;
+    margin-left: auto; margin-right: auto;
+    padding-left: 10px; padding-right: 10px;
+    border: solid 1px black; border-radius: 10px;
+    width:fit-content;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px; margin-bottom: 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    margin-right: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media(max-width:1440px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    #gender {
+        height: 50px; width: 50px;
+    }
+
+    #pic {
+        margin:0px;
+    }
+}
+
+@media(max-width:1080px) {
+    #icons {
+        width:100%;
+    }
+
+    #gender {
+        display:none;
+    }
+
+    form {
+        width:100%;
+        flex-flow:column;
+        align-items: center;
+    }
+}
+
+@media(max-width:720px) {
+    #icons {
+        flex-flow:column;
+        align-items:center;
+    }
+
+    .icons {
+        margin-top:10px; margin-bottom:10px;
+    }
+}
